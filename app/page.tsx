@@ -582,7 +582,7 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-300 text-sm">
-                * Minimum 10,000 participants required per session to distribute prizes
+                * Minimum 50,000 participants required per session to distribute prizes
                 <br />* Maximum 10 lakh participants per session
               </p>
             </CardContent>

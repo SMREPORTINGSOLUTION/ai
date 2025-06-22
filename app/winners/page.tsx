@@ -265,8 +265,8 @@ export default function WinnersPage() {
               </div>
             </div>
             <p className="text-gray-300 text-sm">
-              * Winners are selected randomly from eligible participants. Each session requires minimum participants to
-              distribute prizes.
+              * Winners are selected randomly from eligible participants. Minimum 50,000 participants required per
+              session to distribute prizes.
               <br />* Maximum 10 lakh participants per session across 3 daily sessions.
             </p>
           </CardContent>
