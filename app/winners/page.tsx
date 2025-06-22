@@ -238,33 +238,36 @@ export default function WinnersPage() {
         )}
 
         {/* Contest Rules Info */}
-        <Card className="mt-8 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-500/30">
-          <CardContent className="p-6">
-            <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-              <Gift className="w-5 h-5" />
-              Contest Prize Structure
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-200">
-              <div>
-                <p className="mb-2">
-                  <strong>100,000+ participants:</strong> 10 iPhone 15 devices
-                </p>
-                <p className="mb-2">
-                  <strong>50,000+ participants:</strong> 5 iPhone 15 devices
-                </p>
+        <Card className="mt-8 bg-white/10 backdrop-blur-sm border-white/20">
+          <CardContent className="p-12 text-center">
+            <Gift className="w-16 h-16 text-[#C71852] mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-white mb-6">Contest Prize Structure</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-200 mb-6">
+              <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
+                <span>10 lakh+ participants</span>
+                <Badge className="bg-yellow-600 text-white">10 iPhones</Badge>
               </div>
-              <div>
-                <p className="mb-2">
-                  <strong>25,000+ participants:</strong> 3 iPhone 15 devices
-                </p>
-                <p className="mb-2">
-                  <strong>10,000+ participants:</strong> 1 iPhone 15 device
-                </p>
+              <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
+                <span>5 lakh+ participants</span>
+                <Badge className="bg-yellow-600 text-white">5 iPhones</Badge>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
+                <span>2.5 lakh+ participants</span>
+                <Badge className="bg-yellow-600 text-white">3 iPhones</Badge>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
+                <span>1 lakh+ participants</span>
+                <Badge className="bg-yellow-600 text-white">2 iPhones</Badge>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg md:col-span-2">
+                <span>50,000+ participants</span>
+                <Badge className="bg-yellow-600 text-white">1 iPhone</Badge>
               </div>
             </div>
-            <p className="text-xs text-gray-300 mt-4">
+            <p className="text-gray-300 text-sm">
               * Winners are selected randomly from eligible participants. Each session requires minimum participants to
               distribute prizes.
+              <br />* Maximum 10 lakh participants per session across 3 daily sessions.
             </p>
           </CardContent>
         </Card>

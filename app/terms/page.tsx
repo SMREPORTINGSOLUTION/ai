@@ -62,7 +62,7 @@ export default function TermsPage() {
                   <li>Morning Session: 8:00 AM</li>
                   <li>Afternoon Session: 2:00 PM</li>
                   <li>Evening Session: 8:00 PM</li>
-                  <li>Each session accepts up to 100,000 participants</li>
+                  <li>Each session accepts up to 10 lakh (1,000,000) participants</li>
                 </ul>
               </div>
 
@@ -70,19 +70,22 @@ export default function TermsPage() {
                 <h4 className="font-semibold text-white mb-2">Prize Distribution Structure</h4>
                 <ul className="list-disc list-inside space-y-1 ml-4">
                   <li>
-                    <strong>100,000+ participants:</strong> 10 iPhone 15 devices will be distributed
+                    <strong>10 lakh+ participants:</strong> 10 iPhone 15 devices will be distributed
                   </li>
                   <li>
-                    <strong>50,000+ participants:</strong> 5 iPhone 15 devices will be distributed
+                    <strong>5 lakh+ participants:</strong> 5 iPhone 15 devices will be distributed
                   </li>
                   <li>
-                    <strong>25,000+ participants:</strong> 3 iPhone 15 devices will be distributed
+                    <strong>2.5 lakh+ participants:</strong> 3 iPhone 15 devices will be distributed
                   </li>
                   <li>
-                    <strong>10,000+ participants:</strong> 1 iPhone 15 device will be distributed
+                    <strong>1 lakh+ participants:</strong> 2 iPhone 15 devices will be distributed
                   </li>
                   <li>
-                    <strong>Less than 10,000 participants:</strong> No prizes will be distributed for that session
+                    <strong>50,000+ participants:</strong> 1 iPhone 15 device will be distributed
+                  </li>
+                  <li>
+                    <strong>Less than 50,000 participants:</strong> No prizes will be distributed for that session
                   </li>
                 </ul>
               </div>
@@ -95,6 +98,16 @@ export default function TermsPage() {
                   <li>One entry per person per session</li>
                   <li>Valid email and phone number required</li>
                   <li>Must be 18+ years old to participate</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-white mb-2">Participation Limits</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Maximum 10 lakh (1,000,000) participants per session</li>
+                  <li>Sessions may close early if maximum capacity is reached</li>
+                  <li>First-come, first-served basis for entry acceptance</li>
+                  <li>No refunds if session becomes full after payment</li>
                 </ul>
               </div>
             </CardContent>
@@ -116,16 +129,28 @@ export default function TermsPage() {
                   <li>No guarantee of winning any prize</li>
                   <li>Participants may lose their entry fee without receiving any prize</li>
                   <li>Only participate with money you can afford to lose</li>
+                  <li>With up to 10 lakh participants per session, winning odds are extremely low</li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="font-semibold text-white mb-2">Contest Risks</h4>
                 <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li>Contests may be cancelled if minimum participants are not reached</li>
+                  <li>Contests may be cancelled if minimum participants (50,000) are not reached</li>
                   <li>Technical issues may affect contest operations</li>
                   <li>Prize distribution depends on total participant count</li>
                   <li>Winners are selected through random selection process</li>
+                  <li>Sessions may reach maximum capacity (10 lakh) and close unexpectedly</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-white mb-2">Odds and Probability</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>With maximum 10 lakh participants and maximum 10 prizes, odds are 1 in 100,000 at best</li>
+                  <li>Actual odds may be much lower depending on participant count and prize tier</li>
+                  <li>This is primarily a game of chance with very low probability of winning</li>
+                  <li>Most participants will not win any prize</li>
                 </ul>
               </div>
 
@@ -133,11 +158,12 @@ export default function TermsPage() {
                 <h4 className="font-semibold text-white mb-2">User Acknowledgment</h4>
                 <p className="text-red-200 font-semibold">By participating, you explicitly acknowledge that:</p>
                 <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
-                  <li>You understand this is a game of chance with no guaranteed returns</li>
+                  <li>You understand this is a game of chance with extremely low winning odds</li>
                   <li>You are participating entirely at your own risk</li>
                   <li>You will not hold the organizers liable for any losses</li>
                   <li>You have read and understood all terms and conditions</li>
                   <li>You are participating voluntarily and of your own free will</li>
+                  <li>You understand that with up to 10 lakh participants, your chances of winning are minimal</li>
                 </ul>
               </div>
             </CardContent>
@@ -159,6 +185,19 @@ export default function TermsPage() {
                   <li>Selection occurs after each contest session ends</li>
                   <li>All eligible participants have equal chances of winning</li>
                   <li>Winner selection is final and cannot be contested</li>
+                  <li>Number of winners depends on total participant count as per prize structure</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-white mb-2">Prize Tiers and Distribution</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>10 lakh+ participants: 10 iPhone 15 devices distributed</li>
+                  <li>5 lakh+ participants: 5 iPhone 15 devices distributed</li>
+                  <li>2.5 lakh+ participants: 3 iPhone 15 devices distributed</li>
+                  <li>1 lakh+ participants: 2 iPhone 15 devices distributed</li>
+                  <li>50,000+ participants: 1 iPhone 15 device distributed</li>
+                  <li>Less than 50,000 participants: No prizes distributed, entry fees retained</li>
                 </ul>
               </div>
 
@@ -170,6 +209,7 @@ export default function TermsPage() {
                   <li>Delivery timeframe: 7-14 business days</li>
                   <li>Winners must provide valid shipping address</li>
                   <li>Prizes cannot be exchanged for cash</li>
+                  <li>Unclaimed prizes within 30 days will be forfeited</li>
                 </ul>
               </div>
             </CardContent>
@@ -190,7 +230,18 @@ export default function TermsPage() {
                   <li>Organizers are not liable for any financial losses</li>
                   <li>No compensation for technical issues or delays</li>
                   <li>Participants waive all claims against organizers</li>
-                  <li>Maximum liability limited to entry fee amount</li>
+                  <li>Maximum liability limited to entry fee amount (₹10)</li>
+                  <li>No liability for sessions that don't meet minimum participant requirements</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-white mb-2">Session Capacity and Fairness</h4>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Sessions may close without notice when 10 lakh capacity is reached</li>
+                  <li>Entry acceptance is on first-come, first-served basis</li>
+                  <li>No refunds for sessions that become full after payment processing</li>
+                  <li>Technical delays may affect entry processing order</li>
                 </ul>
               </div>
 
@@ -201,6 +252,7 @@ export default function TermsPage() {
                   <li>Winner names may be published for transparency</li>
                   <li>Payment information is processed securely</li>
                   <li>Data retention as per applicable laws</li>
+                  <li>Participant statistics may be shared publicly</li>
                 </ul>
               </div>
 
@@ -209,6 +261,7 @@ export default function TermsPage() {
                 <ul className="list-disc list-inside space-y-1 ml-4">
                   <li>Terms may be updated without prior notice</li>
                   <li>Contest may be suspended or terminated at any time</li>
+                  <li>Prize structure may be modified based on participation levels</li>
                   <li>Continued participation implies acceptance of updated terms</li>
                   <li>Disputes subject to local jurisdiction</li>
                 </ul>
@@ -222,15 +275,22 @@ export default function TermsPage() {
               <div className="text-center">
                 <AlertTriangle className="w-12 h-12 text-orange-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-orange-400 mb-4">FINAL WARNING</h3>
-                <p className="text-orange-200 mb-4">This contest involves financial risk. Only participate if you:</p>
+                <p className="text-orange-200 mb-4">
+                  This contest involves significant financial risk with extremely low winning odds. Only participate if
+                  you:
+                </p>
                 <ul className="text-orange-200 text-left max-w-md mx-auto space-y-2">
                   <li>• Can afford to lose the entry fee</li>
-                  <li>• Understand this is a game of chance</li>
+                  <li>• Understand this is a game of chance with odds as low as 1 in 1,000,000</li>
                   <li>• Accept full responsibility for your participation</li>
-                  <li>• Are participating for entertainment purposes</li>
+                  <li>• Are participating for entertainment purposes only</li>
+                  <li>• Understand that most participants will not win</li>
                 </ul>
                 <p className="text-orange-300 font-semibold mt-4">
                   DO NOT PARTICIPATE IF YOU CANNOT AFFORD TO LOSE YOUR ENTRY FEE
+                </p>
+                <p className="text-red-300 font-bold mt-2">
+                  WITH UP TO 10 LAKH PARTICIPANTS, YOUR CHANCES OF WINNING ARE EXTREMELY LOW
                 </p>
               </div>
             </CardContent>
@@ -242,7 +302,7 @@ export default function TermsPage() {
               <h3 className="text-lg font-semibold text-green-400 mb-4">Agreement Confirmation</h3>
               <p className="text-green-200 mb-4">
                 By clicking "Enter Contest" on our main page, you confirm that you have read, understood, and agree to
-                all the terms and conditions stated above.
+                all the terms and conditions stated above, including the updated prize structure and participant limits.
               </p>
               <Button onClick={() => router.push("/")} className="bg-green-600 hover:bg-green-700 text-white">
                 I Understand - Return to Contest
@@ -254,6 +314,7 @@ export default function TermsPage() {
         {/* Footer */}
         <div className="mt-8 text-center text-gray-300 text-sm">
           <p>Last updated: {new Date().toLocaleDateString()}</p>
+          <p>Updated to reflect new prize structure and 10 lakh participant capacity.</p>
           <p>For questions or concerns, please contact our support team.</p>
         </div>
       </div>
