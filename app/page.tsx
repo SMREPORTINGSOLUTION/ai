@@ -53,7 +53,7 @@ export default function HomePage() {
     totalParticipants: 0,
     currentSessionWinners: 0,
     availablePrizes: 0,
-    remainingSlots: CONTEST_CONFIG.MAX_PARTICIPANTS_PER_SESSION,
+    remainingSlots: 1000000, // Updated to 10 lakh
     winnersSelected: false,
     sessionsData: [],
   })
@@ -83,7 +83,7 @@ export default function HomePage() {
             totalParticipants: 0,
             currentSessionWinners: 0,
             availablePrizes: 0,
-            remainingSlots: CONTEST_CONFIG.MAX_PARTICIPANTS_PER_SESSION,
+            remainingSlots: 1000000, // Updated to 10 lakh
             winnersSelected: false,
             sessionsData: [],
           })
@@ -98,7 +98,7 @@ export default function HomePage() {
           totalParticipants: 0,
           currentSessionWinners: 0,
           availablePrizes: 0,
-          remainingSlots: CONTEST_CONFIG.MAX_PARTICIPANTS_PER_SESSION,
+          remainingSlots: 1000000, // Updated to 10 lakh
           winnersSelected: false,
           sessionsData: [],
         })
@@ -323,7 +323,7 @@ export default function HomePage() {
               <span className="block text-yellow-400">Every Day!</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-3xl mx-auto">
-              Join up to 100,000 participants in 3 daily sessions for a chance to win iPhone 15 devices!
+              Join up to 10 lakh participants in 3 daily sessions for a chance to win iPhone 15 devices!
             </p>
             <div className="flex items-center justify-center gap-2 mb-4">
               <IndianRupee className="w-6 h-6 text-green-400" />
@@ -568,16 +568,12 @@ export default function HomePage() {
             })}
           </div>
 
-          {/* Prize Structure */}
+          {/* Prize Structure - Updated Style */}
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 max-w-4xl mx-auto">
-            <CardHeader>
-              <CardTitle className="text-white text-center flex items-center justify-center gap-2">
-                <Trophy className="w-6 h-6 text-yellow-400" />
-                Prize Distribution Structure
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-200">
+            <CardContent className="p-12 text-center">
+              <Trophy className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-white mb-6">Contest Prize Structure</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-200 mb-6">
                 {CONTEST_CONFIG.PRIZE_TIERS.map((tier, index) => (
                   <div key={index} className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
                     <span>{tier.minParticipants.toLocaleString()}+ participants</span>
@@ -585,8 +581,9 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <p className="text-center text-gray-300 text-sm mt-4">
+              <p className="text-gray-300 text-sm">
                 * Minimum 10,000 participants required per session to distribute prizes
+                <br />* Maximum 10 lakh participants per session
               </p>
             </CardContent>
           </Card>

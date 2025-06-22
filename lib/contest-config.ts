@@ -7,13 +7,14 @@ export const CONTEST_CONFIG = {
     { session: 3, time: "20:00", label: "Evening Contest (8:00 PM)" },
   ],
   PRIZE_TIERS: [
-    { minParticipants: 100000, prizes: 10, label: "10 iPhones" },
-    { minParticipants: 50000, prizes: 5, label: "5 iPhones" },
-    { minParticipants: 25000, prizes: 3, label: "3 iPhones" },
-    { minParticipants: 10000, prizes: 1, label: "1 iPhone" },
+    { minParticipants: 1000000, prizes: 10, label: "10 iPhones" },
+    { minParticipants: 500000, prizes: 5, label: "5 iPhones" },
+    { minParticipants: 250000, prizes: 3, label: "3 iPhones" },
+    { minParticipants: 100000, prizes: 2, label: "2 iPhones" },
+    { minParticipants: 50000, prizes: 1, label: "1 iPhone" },
   ],
   ENTRY_FEE: 10,
-  MAX_PARTICIPANTS_PER_SESSION: 100000,
+  MAX_PARTICIPANTS_PER_SESSION: 1000000, // Updated to 10 lakh
 }
 
 export function getCurrentSession(): number {
@@ -47,5 +48,5 @@ export function getPrizeTierInfo(participantCount: number) {
       return tier
     }
   }
-  return { minParticipants: 10000, prizes: 0, label: "Contest not eligible" }
+  return { minParticipants: 50000, prizes: 0, label: "Contest not eligible" }
 }

@@ -61,8 +61,8 @@ export async function POST(request: NextRequest) {
         .select("*", { count: "exact", head: true })
         .eq("entry_date", today)
 
-      if (count && count >= 100000) {
-        return NextResponse.json({ error: "Today's contest is full (100,000 participants reached)" }, { status: 400 })
+      if (count && count >= 1000000) {
+        return NextResponse.json({ error: "Today's contest is full (10 lakh participants reached)" }, { status: 400 })
       }
 
       // Process payment
@@ -145,9 +145,9 @@ export async function POST(request: NextRequest) {
       .eq("entry_date", today)
       .eq("contest_session", currentContestSession)
 
-    if (count && count >= 100000) {
+    if (count && count >= 1000000) {
       return NextResponse.json(
-        { error: "This contest session is full (100,000 participants reached)" },
+        { error: "This contest session is full (10 lakh participants reached)" },
         { status: 400 },
       )
     }
